@@ -1,4 +1,3 @@
-
 name: Example workflow for Python using Snyk
 on: push
 jobs:
@@ -10,7 +9,6 @@ jobs:
         uses: snyk/actions/python@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-          SNYK_ORG: 7d31ba38-a2ed-4b68-95af-83e7bc8a6f55
           DEBUG: "*snyk*"
         with:
-          args: --all-projects
+          args: --all-projects --org=7d31ba38-a2ed-4b68-95af-83e7bc8a6f55
