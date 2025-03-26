@@ -10,6 +10,7 @@ jobs:
         uses: snyk/actions/python@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+          SNYK_ORG: 7d31ba38-a2ed-4b68-95af-83e7bc8a6f55
           DEBUG: "*snyk*"
         with:
           args: --all-projects
